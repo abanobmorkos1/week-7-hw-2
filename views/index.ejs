@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to GitPub</h1>
+    <h1>welcome to Gitpub</h1>
+    <ul>
+        <% drinks.forEach(function(drink) { %>
+          <li> <a href="./show.ejs"><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1)%> </a></li>
+        <% }); %>
+    </ul>
+      
     <style>
         body {
           color: blanchedalmond;
